@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Dragon Cave - Abandoned Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.0.2
-// @description  try to take over the world!
+// @version      1.0.3
+// @description  Reload ever x seconds
 // @author       kakol20
 // @match        https://dragcave.net/abandoned
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dragcave.net
@@ -13,7 +13,7 @@
 
 (function() {
   'use strict';
-  const reloadTimeSeconds = 12;
+  const reloadTimeSeconds = 10;
   const reloadTimeMilliseconds = reloadTimeSeconds * 1000;
 
   let counter = 0;

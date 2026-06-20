@@ -1,12 +1,13 @@
 // ==UserScript==
-// @name         Dragond Cave - Cave Reload
+// @name         Dragon Cave - Cave Reload
 // @namespace    http://tampermonkey.net/
-// @version      2026-06-13
+// @version      1.0
 // @description  try to take over the world!
 // @author       kakol20
 // @match        https://dragcave.net/locations/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dragcave.net
 // @grant        none
+// @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Tampermonkey/main/cave.js
 // ==/UserScript==
 
 (function() {

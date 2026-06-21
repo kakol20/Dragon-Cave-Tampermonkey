@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Dragon Cave - Abandoned Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.0.4
+// @version      1.0.5
 // @description  Reload every x seconds
 // @author       kakol20
 // @match        https://dragcave.net/abandoned
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dragcave.net
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Tampermonkey/main/abandoned.js
-// @updateURL    https://raw.githubusercontent.com/kakol20/Dragon-Cave-Tampermonkey/main/abandoned.js
+// @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/abandoned.js
+// @updateURL    https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/abandoned.js
 // ==/UserScript==
 
 (function() {

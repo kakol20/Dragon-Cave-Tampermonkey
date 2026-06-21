@@ -1,15 +1,15 @@
 // ==UserScript==
 // @name         Dragon Cave - Scroll Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.1.4
+// @version      1.1.5
 // @description  Reload Scroll Every 15 Minutes
 // @author       kakol20
 // @match        https://dragcave.net/dragons*
 // @match        https://dragcave.net/user/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dragcave.net
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Tampermonkey/main/scroll.js
-// @updateURL    https://raw.githubusercontent.com/kakol20/Dragon-Cave-Tampermonkey/main/scroll.js
+// @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/scroll.js
+// @updateURL    https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/scroll.js
 // ==/UserScript==
 
 (function() {

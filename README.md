@@ -1,2 +1,2 @@
-# Dragon Cave Tampermonkey
-Tampermonkey Extensions
+# Dragon Cave Userscript
+Userscript Extensions

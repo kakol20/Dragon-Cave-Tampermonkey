@@ -7,8 +7,8 @@
 // @match        https://dragcave.net/abandoned
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dragcave.net
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Tampermonkey/main/abandoned.js
-// @updateURL    https://raw.githubusercontent.com/kakol20/Dragon-Cave-Tampermonkey/main/abandoned.js
+// @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/abandoned.js
+// @updateURL    https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/abandoned.js
 // ==/UserScript==
 
 (function() {

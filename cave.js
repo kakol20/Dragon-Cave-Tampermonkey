@@ -7,8 +7,8 @@
 // @match        https://dragcave.net/locations/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dragcave.net
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Tampermonkey/main/cave.js
-// @updateURL    https://raw.githubusercontent.com/kakol20/Dragon-Cave-Tampermonkey/main/cave.js
+// @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/cave.js
+// @updateURL    https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/cave.js
 // ==/UserScript==
 
 (function() {

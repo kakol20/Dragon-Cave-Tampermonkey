@@ -8,8 +8,8 @@
 // @match        https://dragcave.net/user/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dragcave.net
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Tampermonkey/main/scroll.js
-// @updateURL    https://raw.githubusercontent.com/kakol20/Dragon-Cave-Tampermonkey/main/scroll.js
+// @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/scroll.js
+// @updateURL    https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/scroll.js
 // ==/UserScript==
 
 (function() {

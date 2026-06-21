@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Dragon Cave - Cave Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.0.2
-// @description  try to take over the world!
+// @version      1.0.3
+// @description  Cave shuffles every minutes - but does not update exactly at every 5th minute
 // @author       kakol20
 // @match        https://dragcave.net/locations/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dragcave.net
@@ -14,12 +14,21 @@
 (function() {
   'use strict';
 
+  const style = `
+    position:fixed;left:10px;top:10px;
+    background-color: color-mix(in oklab, Canvas 50%, transparent);
+    width: auto;
+    color: CanvasText;
+    padding:5px;
+    border-radius: 5px;`;
+
+  const reloadAtSecond = 3;
+
   setInterval(() => {
     const dateNow = Date.now();
     const dateStr = new Date(dateNow);
     const dateMinutes = dateStr.getMinutes();
     const dateSeconds = dateStr.getSeconds();
-    const reloadAtSecond = 3;
 
     if (dateMinutes % 5 === 0 && dateSeconds === reloadAtSecond) location.reload();
 
@@ -27,13 +36,6 @@
 
     if (timerDiv === null) {
       let createDiv = document.createElement('div');
-      const style = `
-        position:fixed;left:10px;top:10px;
-        background-color: color-mix(in oklab, Canvas 50%, transparent);
-        width: auto;
-        color: CanvasText;
-        padding:5px;
-        border-radius: 5px;`;
 
       createDiv.style.cssText = style;
       createDiv.setAttribute('id', 'k20_timer');

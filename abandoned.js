@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Dragon Cave - Abandoned Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.0.3
-// @description  Reload ever x seconds
+// @version      1.0.4
+// @description  Reload every x seconds
 // @author       kakol20
 // @match        https://dragcave.net/abandoned
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dragcave.net
@@ -16,6 +16,14 @@
   const reloadTimeSeconds = 10;
   const reloadTimeMilliseconds = reloadTimeSeconds * 1000;
 
+  const style = `
+    position:fixed;left:10px;top:10px;
+    background-color: color-mix(in oklab, Canvas 50%, transparent);
+    width: auto;
+    color: CanvasText;
+    padding:5px;
+    border-radius: 5px;`;
+
   let counter = 0;
   setInterval(() => {
     const dateNow = Date.now();
@@ -28,14 +36,6 @@
     let timerDiv = document.getElementById('k20_timer');
     if (timerDiv === null) {
       let createDiv = document.createElement('div');
-
-      const style = `
-        position:fixed;left:10px;top:10px;
-        background-color: color-mix(in oklab, Canvas 50%, transparent);
-        width: auto;
-        color: CanvasText;
-        padding:5px;
-        border-radius: 5px;`;
 
       createDiv.style.cssText = style;
       createDiv.setAttribute('id', 'k20_timer');

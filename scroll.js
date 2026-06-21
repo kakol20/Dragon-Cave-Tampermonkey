@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Dragon Cave - Scroll Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.1.2
-// @description  Reload Scroll Every 30 Minutes
+// @version      1.1.3
+// @description  Reload Scroll Every 15 Minutes
 // @author       kakol20
 // @match        https://dragcave.net/dragons*
 // @match        https://dragcave.net/user/*
@@ -39,13 +39,6 @@
 
     if (timerDiv === null) {
       let createDiv = document.createElement('div');
-      const style = `
-        position:fixed;left:10px;top:10px;
-        background-color: color-mix(in oklab, Canvas 50%, transparent);
-        width: auto;
-        color: CanvasText;
-        padding:5px;
-        border-radius: 5px;`;
 
       createDiv.style.cssText = style;
       createDiv.setAttribute('id', 'k20_timer');

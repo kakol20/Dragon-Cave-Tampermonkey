@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dragon Cave - Scroll Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.1.1
+// @version      1.1.2
 // @description  Reload Scroll Every 30 Minutes
 // @author       kakol20
 // @match        https://dragcave.net/dragons*
@@ -24,8 +24,7 @@
     border-radius: 5px;`;
 
   const reloadMinutes = 15;
-  const reloadAtSecond = 0;
-  const reloadTimeMilliseconds = (reloadMinutes * 60 + reloadAtSecond) * 1000;
+  const reloadTimeMilliseconds = reloadMinutes * 60 * 1000;
 
   let counter = 0;
   setInterval(() => { 
@@ -53,10 +52,10 @@
       document.body.appendChild(createDiv);
     }
 
-    let timeLeft = ((Math.ceil(dateMinutes / reloadMinutes) * reloadMinutes * 60) + reloadAtSecond) - (dateMinutes * 60 + dateSeconds);
-    if (timeLeft < 0) timeLeft += reloadMinutes * 60;
-    const minutesLeft = Math.floor(timeLeft / 60);
-    const secondsLeft = timeLeft % 60;
+    const dateOfReload = Math.ceil(dateNow / reloadTimeMilliseconds) * reloadTimeMilliseconds;
+    const millisecondsLeft = dateOfReload - dateNow;
+    const minutesLeft = Math.floor(millisecondsLeft / (60 * 1000));
+    const secondsLeft = Math.ceil(millisecondsLeft / 1000) % 60;
 
     let output = `<small>${dateStr}
       <br>Time Until Reload:

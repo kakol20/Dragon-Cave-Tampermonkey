@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Dragon Cave - Scroll Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.1.0
+// @version      1.1.1
 // @description  Reload Scroll Every 30 Minutes
 // @author       kakol20
-// @match        https://dragcave.net/dragons
+// @match        https://dragcave.net/dragons*
 // @match        https://dragcave.net/user/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dragcave.net
 // @grant        none
@@ -25,14 +25,16 @@
 
   const reloadMinutes = 15;
   const reloadAtSecond = 0;
+  const reloadTimeMilliseconds = (reloadMinutes * 60 + reloadAtSecond) * 1000;
 
-  setInterval(() => {
+  let counter = 0;
+  setInterval(() => { 
     const dateNow = Date.now();
     const dateStr = new Date(dateNow);
     const dateMinutes = dateStr.getMinutes();
     const dateSeconds = dateStr.getSeconds();
 
-    if (dateMinutes % reloadMinutes === 0 && dateSeconds === reloadAtSecond) location.reload();
+    if ((Math.floor(dateNow / 1000) * 1000) % reloadTimeMilliseconds === 0 && counter >= 1) location.reload();
 
     let timerDiv = document.getElementById('k20_timer');
 
@@ -63,5 +65,6 @@
       </small>`;
 
     document.getElementById('k20_timer').innerHTML = output;
+    ++counter;
   }, 1000); 
 })();

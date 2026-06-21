@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dragon Cave - Abandoned Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.0.5
+// @version      1.0.6
 // @description  Reload every x seconds
 // @author       kakol20
 // @match        https://dragcave.net/abandoned

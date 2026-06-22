@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         Dragon Cave - Cave Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.0.6
+// @version      1.0.7
 // @description  Cave shuffles every 5 minutes
 // @author       kakol20
 // @match        https://dragcave.net/locations/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dragcave.net
-// @grant        none
 // @downloadURL  https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/cave.js
 // @updateURL    https://raw.githubusercontent.com/kakol20/Dragon-Cave-Userscripts/main/cave.js
 // @grant        GM_addStyle

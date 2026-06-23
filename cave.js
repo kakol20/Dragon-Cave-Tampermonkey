@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dragon Cave - Cave Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.0.7
+// @version      1.0.8
 // @description  Cave shuffles every 5 minutes
 // @author       kakol20
 // @match        https://dragcave.net/locations/*
@@ -15,7 +15,7 @@
 (function() {
   'use strict';
 
-  const fontName = 'Cascadia Code';
+  const fontName = 'DM Mono';
 
   // https://fonts.google.com/selection/embed
   const link1 = document.createElement('link');
@@ -28,13 +28,12 @@
 
   const link3 = document.createElement('link');
   link3.rel = 'stylesheet';
-  link3.href = 'https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap';
+  link3.href = 'https://fonts.googleapis.com/css2?family=DM+Mono&display=swap';
 
   GM_addStyle(`
-    .cascadia-code-cascadia {
-      font-family: "Cascadia Code", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 200;
+    .dm-mono-regular {
+      font-family: "DM Mono", monospace;
+      font-weight: 400;
       font-style: normal;
     }
   `);

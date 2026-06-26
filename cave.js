@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dragon Cave - Cave Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.0.15
+// @version      1.0.16
 // @description  Cave shuffles every 5 minutes
 // @author       kakol20
 // @match        https://dragcave.net/locations/*
@@ -61,6 +61,7 @@
     padding:5px;
     border-radius: 5px;
     font-size: 14px;
+    color-scheme: dark;
   `;
 
   const reloadAtSecond = 3;

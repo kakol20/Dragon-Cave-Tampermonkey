@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dragon Cave - Scroll Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.1.13
+// @version      1.1.14
 // @description  Reload Scroll Every 15 Minutes
 // @author       kakol20
 // @match        https://dragcave.net/dragons*
@@ -61,6 +61,7 @@
     color: CanvasText;
     padding:5px;
     border-radius: 5px;
+    font-size: 14px;
   `;
 
   const reloadMinutes = 15;

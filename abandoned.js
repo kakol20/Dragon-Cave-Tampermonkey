@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dragon Cave - Abandoned Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.0.14
+// @version      1.0.15
 // @description  Reload every x seconds
 // @author       kakol20
 // @match        https://dragcave.net/abandoned
@@ -63,6 +63,7 @@
     color: CanvasText;
     padding:5px;
     border-radius: 5px;
+    font-size: 14px;
   `;
 
   let counter = 0;

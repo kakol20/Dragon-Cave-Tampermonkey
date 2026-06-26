@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dragon Cave - Abandoned Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.0.13
+// @version      1.0.14
 // @description  Reload every x seconds
 // @author       kakol20
 // @match        https://dragcave.net/abandoned
@@ -21,7 +21,7 @@
   };
   const isMobile = window.mobileCheck();
 
-  const reloadTimeSeconds = 10;
+  const reloadTimeSeconds = 19;
   const reloadTimeMilliseconds = reloadTimeSeconds * 1000;
 
   const fontName = 'DM Mono';

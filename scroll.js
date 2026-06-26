@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dragon Cave - Scroll Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.1.14
+// @version      1.1.15
 // @description  Reload Scroll Every 15 Minutes
 // @author       kakol20
 // @match        https://dragcave.net/dragons*
@@ -56,7 +56,7 @@
     position:fixed;
     left:10px;
     ${isMobile ? 'bottom' : 'top'}:10px;
-    background-color: color-mix(in oklab, Canvas 75%, transparent);
+    background-color: color-mix(in oklab, Canvas 50%, transparent);
     width: auto;
     color: CanvasText;
     padding:5px;

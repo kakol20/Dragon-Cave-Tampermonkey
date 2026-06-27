@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dragon Cave - Scroll Reload
 // @namespace    http://tampermonkey.net/
-// @version      1.1.17
+// @version      1.1.18
 // @description  Reload Scroll Every 15 Minutes
 // @author       kakol20
 // @match        https://dragcave.net/dragons*
@@ -75,13 +75,13 @@
   setInterval(() => {
     const dateNow = Date.now();
 
-    if (dateNow - startDate < 10 * 60 * 1000) return;
-
     const dateStr = new Date(dateNow);
     const dateMinutes = dateStr.getMinutes();
     const dateSeconds = dateStr.getSeconds();
 
-    if ((Math.floor(dateNow / 1000) * 1000) % reloadTimeMilliseconds === 0 && counter >= 1) location.reload();
+    if ((Math.floor(dateNow / 1000) * 1000) % reloadTimeMilliseconds === 0 && 
+      counter >= 1 && 
+      dateNow - startDate >= 10 * 60 * 1000) location.reload();
 
     let timerDiv = document.getElementById('k20_timer');
 
